@@ -1,2 +1,2 @@
 // export all the fole 
-export * from '.';
+export * from './components'
