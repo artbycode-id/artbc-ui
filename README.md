@@ -1,14 +1,10 @@
-<h3 align="center">
-  Artbc UI - React 
-</h3>
+Artbc UI - React 
+============================
+React Artbc UI System
 
-<p align="center">
-  React Artbc UI System
-</p>
+[![npm version](https://img.shields.io/npm/v/@artbc-ui/react.svg?style=flat)](https://www.npmjs.com/package/@headlessui/react) 
 
-
-[![npm version](https://img.shields.io/npm/v/@artbc-ui/react.svg)](https://www.npmjs.com/package/@headlessui/react) 
-
+<br/>
 ### Installing 
 
 You can install with:
