@@ -43,7 +43,7 @@ export default [
         inject: {
           insertAt: 'top',
         },
-        extract: true,
+        extract: false,
       }),
       terser(),
     ],
