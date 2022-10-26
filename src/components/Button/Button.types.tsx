@@ -1,13 +1,10 @@
 
 import React from 'react';
 
-
-type ButtonTypeString = 'default' | 'primary';
-
 type ButtonProps = {
-    type: ButtonTypeString;
     children?: React.ReactNode;
+    className ?: string;
 }
 
 // export types
-export { ButtonProps, ButtonTypeString };
+export { ButtonProps };
