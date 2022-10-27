@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-type ButtonTypeString = 'default' | 'primary';
+type ButtonTypeString =  'primary' | 'medium' | 'large' | 'd_small' | 'd_medium' | 'd_large';
 
 type ButtonProps = {
     type: ButtonTypeString;
