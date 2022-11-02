@@ -6,16 +6,16 @@ React Artbc UI System
 
 StoryBook : [https://artbycode-id.github.io/artbc-ui/](https://artbycode-id.github.io/artbc-ui/)
 
-### Installing 
+## Installing 
 
-You can install with yarn or npm:
+#### Install with npm or yarn
 - `npm i @artbc-ui/base @artbc-ui/react`
 
 or
 - `yarn add @artbc-ui/base @artbc-ui/react`
 
 
-Add plugin config tailwindcss in your `tailwind.config.js`
+### Add plugin config tailwindcss in your `tailwind.config.js`
 ```js
 module.exports = {
   ...
