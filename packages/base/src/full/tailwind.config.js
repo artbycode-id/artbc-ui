@@ -31,15 +31,15 @@ module.exports = {
   ],
   plugins: [
     plugin(function ({ addBase, addUtilities, addComponents }) {
-      addBase(require("../../../dist/plugins/base"));
-      addComponents(require("../../../dist/plugins/styled"));
-      addUtilities(require("../../../dist/plugins/utilities"), {
+      addBase(require("../../dist/base"));
+      addComponents(require("../../dist/styled"));
+      addUtilities(require("../../dist/utilities"), {
         variants: ["responsive"],
       });
-      addUtilities(require("../../../dist/plugins/utilities-unstyled"), {
+      addUtilities(require("../../dist/utilities-unstyled"), {
         variants: ["responsive"],
       });
-      addUtilities(require("../../../dist/plugins/utilities-styled"), {
+      addUtilities(require("../../dist/utilities-styled"), {
         variants: ["responsive"],
       });
     }),

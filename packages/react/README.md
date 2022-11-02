@@ -8,20 +8,5 @@ StoryBook : [https://artbycode-id.github.io/artbc-ui/](https://artbycode-id.gith
 
 ### Installing 
 
-You can install with yarn or npm:
-- `npm i @artbc-ui/base @artbc-ui/react`
-
-or
-- `yarn add @artbc-ui/base @artbc-ui/react`
-
-
-Add plugin config tailwindcss in your `tailwind.config.js`
-```js
-module.exports = {
-  ...
-  plugins: [
-    require('@artbc-ui/base'),
-  ],
-}
-
-```
+You can install with:
+- `npm install @artbc-ui/react`

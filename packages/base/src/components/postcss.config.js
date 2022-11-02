@@ -4,7 +4,7 @@ module.exports = {
     require("postcss-nested")({
       bubble: ["screen"],
     }),
-    require("tailwindcss")("./src/plugins/components/tailwind.config.js"),
+    require("tailwindcss")("./src/components/tailwind.config.js"),
     require("autoprefixer"),
   ],
 };

@@ -14,12 +14,12 @@ export const Primary = Template.bind({});
 export const Warning = Template.bind({});
 
 Primary.args = {
-  className: "btn-primary",
+  className: "btn btn-primary",
   children: <span>Primary</span>,
 };
 
 Default.args = {
-  className: "btn-default",
+  className: "btn btn-default",
   children: <span>Default</span>,
 };
 

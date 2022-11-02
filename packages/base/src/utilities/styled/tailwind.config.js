@@ -8,8 +8,8 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addBase, addUtilities }) {
-      addBase(require("../../../../dist/plugins/base"));
-      addUtilities(require("../../../../dist/plugins/utilities"), {
+      addBase(require("../../../dist/base"));
+      addUtilities(require("../../../dist/utilities"), {
         variants: ["responsive"],
       });
     }),
