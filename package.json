@@ -8,15 +8,13 @@
     "lerna": "^6.0.1"
   },
   "scripts": {
-    "build": "lerna run build",
+    "build:lerna": "lerna run build",
+    "version:lerna": "lerna version --no-private",
+    "publish:lerna": "lerna publish from-git --no-private",
     "storybook": "start-storybook -p 6006",
-    "version": "lerna version --no-private",
-    "publish": "lerna publish from-git --no-private",
-    "diff" : "lerna diff",
-    "updated": "lerna updated",
-    "changed": "lerna changed"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.25.2"
+    "build:storybook": "build-storybook",
+    "release:storybook": "npm run build:storybook && gh-pages -d storybook-static",
+    "diff:lerna" : "lerna diff",
+    "release": "npm run version:lerna && npm run build:lerna && npm run publish:lerna && npm run release:storybook"
   }
 }
