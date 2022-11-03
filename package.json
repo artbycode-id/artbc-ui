@@ -10,7 +10,9 @@
   "scripts": {
     "build": "lerna run build",
     "storybook": "start-storybook -p 6006",
-    "publish": "npx changeset publish --access=public"
+    "publish": "npx changeset publish --access=public",
+    "release": "lerna version --no-private",
+    "publish": "lerna publish --no-private"
   },
   "dependencies": {
     "@changesets/cli": "^2.25.2"
