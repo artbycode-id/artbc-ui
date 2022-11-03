@@ -17,7 +17,8 @@
     "url": "git+https://github.com/artbycode-id/artbc-ui.git"
   },
   "keywords": [
-    "UI"
+    "UI",
+    "React"
   ],
   "author": "undercode99 <zrcoder101@gmail.com>",
   "license": "MIT",
