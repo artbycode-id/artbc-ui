@@ -19,7 +19,8 @@
   "keywords": [
     "UI",
     "React",
-    "Tailwindcss"
+    "Tailwindcss",
+    "Framework"
   ],
   "author": "undercode99 <zrcoder101@gmail.com>",
   "license": "MIT",
@@ -72,5 +73,6 @@
     "classnames": "^2.3.2",
     "color": "^4.2.3",
     "css-selector-tokenizer": "^0.8.0"
-  }
+  },
+  "gitHead": "7876c0bd7711205f1839d26789f6cf06d0bcd671"
 }
