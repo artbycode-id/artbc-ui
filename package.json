@@ -1,6 +1,6 @@
 {
-  "name": "root",
-  "private": false,
+  "name": "artbc-ui",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
