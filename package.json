@@ -10,7 +10,6 @@
   "scripts": {
     "build": "lerna run build",
     "storybook": "start-storybook -p 6006",
-    "publish": "npx changeset publish --access=public",
     "version": "lerna version --no-private",
     "publish": "lerna publish --no-private"
   },
