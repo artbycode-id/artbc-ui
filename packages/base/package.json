@@ -36,7 +36,9 @@
     "url": "git+https://github.com/artbycode-id/artbc-ui.git"
   },
   "keywords": [
-    "UI"
+    "UI",
+    "Base",
+    "Tailwindcss"
   ],
   "author": "undercode99 <zrcoder101@gmail.com>",
   "license": "MIT",
