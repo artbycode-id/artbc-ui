@@ -1,6 +1,6 @@
 {
   "name": "@artbc-ui/base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base Artbc UI System",
   "main": "src/index.js",
   "files": [
