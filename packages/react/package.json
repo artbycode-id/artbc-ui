@@ -6,12 +6,7 @@
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "styles.js",
-    "src/styles/lib/**/*.js",
-    "!dist/*.rtl.css",
-    "src/styles/index.js",
-    "src/styles/colors/*.js"
+    "dist"
   ],
   "scripts": {
     "rollup-watch": "rollup -c -w",
