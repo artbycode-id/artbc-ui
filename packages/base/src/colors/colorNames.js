@@ -1,3 +1,4 @@
+// namming variabels colors
 module.exports = {
   primary: "--p",
   "primary-focus": "--pf",

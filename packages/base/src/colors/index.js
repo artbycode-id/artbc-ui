@@ -1,3 +1,4 @@
+//  config colors used tailwindcss
 function withOpacityValue(variable, fallbackColor) {
   return ({ opacityValue }) => {
     let fallbackColorValue = "";
