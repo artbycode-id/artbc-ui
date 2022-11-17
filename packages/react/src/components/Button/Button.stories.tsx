@@ -19,7 +19,7 @@ Primary.args = {
 };
 
 Default.args = {
-  className: "btn btn-default",
+  className: "btn btn-error",
   children: <span>Default</span>,
 };
 

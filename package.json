@@ -15,6 +15,7 @@
     "build:storybook": "build-storybook",
     "release:storybook": "npm run build:storybook && gh-pages -d storybook-static",
     "diff:lerna" : "lerna diff",
-    "release": "npm run version:lerna && npm run build:lerna && npm run publish:lerna && npm run release:storybook"
+    "release": "npm run version:lerna && npm run build:lerna && npm run publish:lerna && npm run release:storybook",
+    "boostrap:lerna": "lerna bootstrap --use-workspaces"
   }
 }

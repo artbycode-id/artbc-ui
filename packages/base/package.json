@@ -27,7 +27,10 @@
     "prejss": "prejss-cli dist/{utilities,components}.css --format commonjs",
     "themes": "postcss src/themes/index.css -o dist/themes.css --config src/themes",
     "full": "postcss src/full/index.css -o dist/full.css --config src/full",
-    "build": "npm run base && npm run utilities-global && npm run utilities-components && npm run merge:utilities && npm run components && npm run prejss && npm run themes && npm run full"
+    "build": "npm run build:base && npm run build:utilities && npm run build:components && npm run prejss && npm run themes && npm run full",
+    "build:components": "npm run pre:components && npm run components && npm run post:components",
+    "build:base": "npm run pre:base && npm run base && npm run post:base",
+    "build:utilities": "npm run pre:utilities-global && npm run utilities-global && npm run post:utilities-global && npm run pre:utilities-components && npm run utilities-components && npm run post:utilities-components && npm run merge:utilities"
   },
   "repository": {
     "type": "git",
