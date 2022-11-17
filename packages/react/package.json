@@ -1,0 +1,79 @@
+{
+  "name": "@artbc-ui/react",
+  "version": "1.0.23",
+  "description": "React Artbc UI System",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup-watch": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artbycode-id/artbc-ui.git"
+  },
+  "keywords": [
+    "UI",
+    "ReactJS",
+    "Tailwindcss",
+    "Framework"
+  ],
+  "author": "undercode99 <zrcoder101@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artbycode-id/artbc-ui/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^9.0.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "0.0.13",
+    "@types/color": "^3.0.3",
+    "@types/node": "^18.8.5",
+    "@types/react": "^18.0.21",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "prejss-cli": "^0.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "homepage": "https://artbycode-id.github.io/artbc-ui/",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "classnames": "^2.3.2",
+    "color": "^4.2.3",
+    "css-selector-tokenizer": "^0.8.0",
+    "@artbc-ui/base": "*"
+  },
+  "gitHead": "7876c0bd7711205f1839d26789f6cf06d0bcd671"
+}
