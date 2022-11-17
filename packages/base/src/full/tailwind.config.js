@@ -32,14 +32,8 @@ module.exports = {
   plugins: [
     plugin(function ({ addBase, addUtilities, addComponents }) {
       addBase(require("../../dist/base"));
-      addComponents(require("../../dist/styled"));
+      addComponents(require("../../dist/components"));
       addUtilities(require("../../dist/utilities"), {
-        variants: ["responsive"],
-      });
-      addUtilities(require("../../dist/utilities-unstyled"), {
-        variants: ["responsive"],
-      });
-      addUtilities(require("../../dist/utilities-styled"), {
         variants: ["responsive"],
       });
     }),
