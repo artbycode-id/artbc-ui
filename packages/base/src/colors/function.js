@@ -68,13 +68,13 @@ module.exports = {
             "%";
         }
 
-        if (!input.hasOwnProperty("accent-focus")) {
-          const darkerHslArray = Color(input["accent"])
+        if (!input.hasOwnProperty("neutral-focus")) {
+          const darkerHslArray = Color(input["neutral"])
             .darken(0.2)
             .hsl()
             .round()
             .array();
-          resultObj["--af"] =
+          resultObj["--nf"] =
             darkerHslArray[0] +
             " " +
             darkerHslArray[1] +
@@ -84,13 +84,61 @@ module.exports = {
             "%";
         }
 
-        if (!input.hasOwnProperty("neutral-focus")) {
-          const darkerHslArray = Color(input["neutral"])
+        if (!input.hasOwnProperty("info-focus")) {
+          const darkerHslArray = Color(input["info"])
             .darken(0.2)
             .hsl()
             .round()
             .array();
-          resultObj["--nf"] =
+          resultObj["--inf"] =
+            darkerHslArray[0] +
+            " " +
+            darkerHslArray[1] +
+            "%" +
+            " " +
+            darkerHslArray[2] +
+            "%";
+        }
+
+        if (!input.hasOwnProperty("success-focus")) {
+          const darkerHslArray = Color(input["success"])
+            .darken(0.2)
+            .hsl()
+            .round()
+            .array();
+          resultObj["--suf"] =
+            darkerHslArray[0] +
+            " " +
+            darkerHslArray[1] +
+            "%" +
+            " " +
+            darkerHslArray[2] +
+            "%";
+        }
+
+        if (!input.hasOwnProperty("warning-focus")) {
+          const darkerHslArray = Color(input["warning"])
+            .darken(0.2)
+            .hsl()
+            .round()
+            .array();
+          resultObj["--waf"] =
+            darkerHslArray[0] +
+            " " +
+            darkerHslArray[1] +
+            "%" +
+            " " +
+            darkerHslArray[2] +
+            "%";
+        }
+
+        if (!input.hasOwnProperty("error-focus")) {
+          const darkerHslArray = Color(input["error"])
+            .darken(0.2)
+            .hsl()
+            .round()
+            .array();
+          resultObj["--erf"] =
             darkerHslArray[0] +
             " " +
             darkerHslArray[1] +
@@ -154,26 +202,13 @@ module.exports = {
           }
         }
 
-        // auto generate state colors
-        if (!input.hasOwnProperty("info")) {
-          resultObj["--in"] = 198 + " " + 93 + "%" + " " + 60 + "%";
-        }
-        if (!input.hasOwnProperty("success")) {
-          resultObj["--su"] = 158 + " " + 64 + "%" + " " + 52 + "%";
-        }
-        if (!input.hasOwnProperty("warning")) {
-          resultObj["--wa"] = 43 + " " + 96 + "%" + " " + 56 + "%";
-        }
-        if (!input.hasOwnProperty("error")) {
-          resultObj["--er"] = 0 + " " + 91 + "%" + " " + 71 + "%";
-        }
-
         // auto generate content colors
         if (!input.hasOwnProperty("base-content")) {
           resultObj["--bc"] = this.generateForegroundColorFrom(
             input["base-100"]
           );
         }
+
         if (!input.hasOwnProperty("primary-content")) {
           resultObj["--pc"] = this.generateForegroundColorFrom(
             input["primary"]
@@ -186,10 +221,6 @@ module.exports = {
           );
         }
 
-        if (!input.hasOwnProperty("accent-content")) {
-          resultObj["--ac"] = this.generateForegroundColorFrom(input["accent"]);
-        }
-
         if (!input.hasOwnProperty("neutral-content")) {
           resultObj["--nc"] = this.generateForegroundColorFrom(
             input["neutral"]
@@ -197,75 +228,37 @@ module.exports = {
         }
 
         if (!input.hasOwnProperty("info-content")) {
-          if (input.hasOwnProperty("info")) {
-            resultObj["--inc"] = this.generateForegroundColorFrom(
-              input["info"]
-            );
-          } else {
-            resultObj["--inc"] = 198 + " " + 100 + "%" + " " + 12 + "%";
-          }
+          resultObj["--inc"] = this.generateForegroundColorFrom(input["info"]);
         }
 
         if (!input.hasOwnProperty("success-content")) {
-          if (input.hasOwnProperty("success")) {
-            resultObj["--suc"] = this.generateForegroundColorFrom(
-              input["success"]
-            );
-          } else {
-            resultObj["--suc"] = 158 + " " + 100 + "%" + " " + 10 + "%";
-          }
+          resultObj["--suc"] = this.generateForegroundColorFrom(
+            input["success"]
+          );
         }
 
         if (!input.hasOwnProperty("warning-content")) {
-          if (input.hasOwnProperty("warning")) {
-            resultObj["--wac"] = this.generateForegroundColorFrom(
-              input["warning"]
-            );
-          } else {
-            resultObj["--wac"] = 43 + " " + 100 + "%" + " " + 11 + "%";
-          }
+          resultObj["--wac"] = this.generateForegroundColorFrom(
+            input["warning"]
+          );
         }
 
         if (!input.hasOwnProperty("error-content")) {
-          if (input.hasOwnProperty("error")) {
-            resultObj["--erc"] = this.generateForegroundColorFrom(
-              input["error"]
-            );
-          } else {
-            resultObj["--erc"] = 0 + " " + 100 + "%" + " " + 14 + "%";
-          }
+          resultObj["--erc"] = this.generateForegroundColorFrom(input["error"]);
         }
 
         // auto generate css variables
-        if (!input.hasOwnProperty("--rounded-box")) {
-          resultObj["--rounded-box"] = "1rem";
-        }
         if (!input.hasOwnProperty("--rounded-btn")) {
           resultObj["--rounded-btn"] = "0.5rem";
         }
-        if (!input.hasOwnProperty("--rounded-badge")) {
-          resultObj["--rounded-badge"] = "1.9rem";
-        }
         if (!input.hasOwnProperty("--animation-btn")) {
           resultObj["--animation-btn"] = "0.25s";
-        }
-        if (!input.hasOwnProperty("--animation-input")) {
-          resultObj["--animation-input"] = ".2s";
-        }
-        if (!input.hasOwnProperty("--btn-text-case")) {
-          resultObj["--btn-text-case"] = "uppercase";
         }
         if (!input.hasOwnProperty("--btn-focus-scale")) {
           resultObj["--btn-focus-scale"] = "0.95";
         }
         if (!input.hasOwnProperty("--border-btn")) {
           resultObj["--border-btn"] = "1px";
-        }
-        if (!input.hasOwnProperty("--tab-border")) {
-          resultObj["--tab-border"] = "1px";
-        }
-        if (!input.hasOwnProperty("--tab-radius")) {
-          resultObj["--tab-radius"] = "0.5rem";
         }
       });
       return resultObj;

@@ -8,14 +8,14 @@
     "lerna": "^6.0.1"
   },
   "scripts": {
-    "build:lerna": "lerna run build",
+    "diff:lerna": "lerna diff",
+    "boostrap:lerna": "lerna bootstrap --use-workspaces",
     "version:lerna": "lerna version --no-private",
+    "build:lerna": "lerna run build",
     "publish:lerna": "lerna publish from-git --no-private",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
     "release:storybook": "npm run build:storybook && gh-pages -d storybook-static",
-    "diff:lerna" : "lerna diff",
-    "release": "npm run version:lerna && npm run build:lerna && npm run publish:lerna && npm run release:storybook",
-    "boostrap:lerna": "lerna bootstrap --use-workspaces"
+    "release": "npm run version:lerna && npm run build:lerna && npm run publish:lerna && npm run release:storybook"
   }
 }

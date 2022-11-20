@@ -8,10 +8,6 @@ module.exports = {
   "secondary-focus": "--sf",
   "secondary-content": "--sc",
 
-  accent: "--a",
-  "accent-focus": "--af",
-  "accent-content": "--ac",
-
   neutral: "--n",
   "neutral-focus": "--nf",
   "neutral-content": "--nc",
@@ -22,14 +18,18 @@ module.exports = {
   "base-content": "--bc",
 
   info: "--in",
+  "info-focus": "--inf",
   "info-content": "--inc",
 
   success: "--su",
+  "success-focus": "--suf",
   "success-content": "--suc",
 
   warning: "--wa",
+  "warning-focus": "--waf",
   "warning-content": "--wac",
 
   error: "--er",
+  "error-focus": "--erf",
   "error-content": "--erc",
 };
