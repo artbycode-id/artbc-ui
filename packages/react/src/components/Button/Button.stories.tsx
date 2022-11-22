@@ -7,48 +7,17 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-export const Solid: ComponentStory<typeof Button> = (args) => (
+export const Default: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn">Button</Button>
     <Button className="btn btn-primary">Button Primary</Button>
-    <Button className="btn btn-secondary">Button Secondary</Button>
-    <Button className="btn btn-info">Button Info</Button>
-    <Button className="btn btn-success">Button Success</Button>
-    <Button className="btn btn-warning">Button Warning</Button>
-    <Button className="btn btn-error">Button Error</Button>
   </div>
 );
 
-export const Outline: ComponentStory<typeof Button> = (args) => (
+export const Light: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
-    <Button className="btn btn-outline">Button</Button>
-    <Button className="btn btn-outline btn-primary">Button Primary</Button>
-    <Button className="btn btn-outline btn-secondary">Button Secondary</Button>
-    <Button className="btn btn-outline btn-info">Button Info</Button>
-    <Button className="btn btn-outline btn-success">Button Success</Button>
-    <Button className="btn btn-outline btn-warning">Button Warning</Button>
-    <Button className="btn btn-outline btn-error">Button Error</Button>
-  </div>
-);
-
-export const Link: ComponentStory<typeof Button> = (args) => (
-  <div className="flex space-x-2">
-    <Button className="btn btn-link">Button</Button>
-    <Button className="btn btn-link btn-primary">Button Primary</Button>
-    <Button className="btn btn-link btn-secondary">Button Secondary</Button>
-    <Button className="btn btn-link btn-info">Button Info</Button>
-    <Button className="btn btn-link btn-success">Button Success</Button>
-    <Button className="btn btn-link btn-warning">Button Warning</Button>
-    <Button className="btn btn-link btn-error">Button Error</Button>
-  </div>
-);
-
-export const Sizes: ComponentStory<typeof Button> = (args) => (
-  <div className="flex space-x-2">
-    <Button className="btn btn-lg">Button Large</Button>
-    <Button className="btn">Button Normal</Button>
-    <Button className="btn btn-sm">Button Small</Button>
-    <Button className="btn btn-xs">Button Extra Small</Button>
+    <Button className="btn btn-light">Button</Button>
+    <Button className="btn btn-light btn-primary">Button Primary</Button>
   </div>
 );
 
@@ -56,11 +25,30 @@ export const Ghost: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn btn-ghost">Button</Button>
     <Button className="btn btn-ghost btn-primary">Button Primary</Button>
-    <Button className="btn btn-ghost btn-secondary">Button Secondary</Button>
-    <Button className="btn btn-ghost btn-info">Button Info</Button>
-    <Button className="btn btn-ghost btn-success">Button Success</Button>
-    <Button className="btn btn-ghost btn-warning">Button Warning</Button>
-    <Button className="btn btn-ghost btn-error">Button Error</Button>
+  </div>
+);
+
+export const Outline: ComponentStory<typeof Button> = (args) => (
+  <div className="flex space-x-2">
+    <Button className="btn btn-outline">Button</Button>
+    <Button className="btn btn-outline btn-primary">Button Primary</Button>
+  </div>
+);
+
+export const Link: ComponentStory<typeof Button> = (args) => (
+  <div className="flex space-x-2">
+    <Button className="btn btn-link">Button</Button>
+    <Button className="btn btn-link btn-primary">Button Primary</Button>
+  </div>
+);
+
+export const Sizes: ComponentStory<typeof Button> = (args) => (
+  <div className="flex space-x-2">
+    <Button className="btn btn-sm">Button Small</Button>
+    <Button className="btn">Button Normal</Button>
+    <Button className="btn btn-lg">Button Large</Button>
+    <Button className="btn btn-xl">Button Extra Large</Button>
+    <Button className="btn btn-2xl">Button 2 Extra Large</Button>
   </div>
 );
 
@@ -71,21 +59,6 @@ export const Disabled: ComponentStory<typeof Button> = (args) => (
     </Button>
     <Button className="btn btn-primary" disabled>
       Button Primary
-    </Button>
-    <Button className="btn btn-secondary" disabled>
-      Button Secondary
-    </Button>
-    <Button className="btn btn-info" disabled>
-      Button Info
-    </Button>
-    <Button className="btn btn-success" disabled>
-      Button Success
-    </Button>
-    <Button className="btn btn-warning" disabled>
-      Button Warning
-    </Button>
-    <Button className="btn btn-error" disabled>
-      Button Error
     </Button>
   </div>
 );
@@ -139,12 +112,15 @@ export const Shapes: ComponentStory<typeof Button> = (args) => (
         />
       </svg>
     </Button>
+    <div className="w-full max-w-md relative">
+      <Button className="btn btn-block">Button Block</Button>
+    </div>
   </div>
 );
 
 export const Icon: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
-    <Button className="btn btn-primary gap-2">
+    <Button className="btn btn-primary btn-sm gap-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
@@ -161,7 +137,7 @@ export const Icon: ComponentStory<typeof Button> = (args) => (
       </svg>
       Button Icon
     </Button>
-    <Button className="btn btn-primary gap-2">
+    <Button className="btn btn-primary btn-lg gap-2">
       Button Icon
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -177,6 +153,23 @@ export const Icon: ComponentStory<typeof Button> = (args) => (
           d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
         />
       </svg>
+    </Button>
+  </div>
+);
+
+export const Loading: ComponentStory<typeof Button> = (args) => (
+  <div className="flex space-x-2">
+    <Button className="btn btn-primary" isLoading>
+      Loading
+    </Button>
+    <Button className="btn btn-square btn-primary" isLoading></Button>
+  </div>
+);
+
+export const Anchor: ComponentStory<typeof Button> = (args) => (
+  <div className="flex space-x-2">
+    <Button className="btn btn-primary" href="#">
+      Anchor
     </Button>
   </div>
 );

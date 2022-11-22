@@ -36,38 +36,6 @@ module.exports = {
         }
 
         // auto generate focus colors
-        if (!input.hasOwnProperty("primary-focus")) {
-          const darkerHslArray = Color(input["primary"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--pf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
-        if (!input.hasOwnProperty("secondary-focus")) {
-          const darkerHslArray = Color(input["secondary"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--sf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
         if (!input.hasOwnProperty("neutral-focus")) {
           const darkerHslArray = Color(input["neutral"])
             .darken(0.2)
@@ -75,70 +43,6 @@ module.exports = {
             .round()
             .array();
           resultObj["--nf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
-        if (!input.hasOwnProperty("info-focus")) {
-          const darkerHslArray = Color(input["info"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--inf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
-        if (!input.hasOwnProperty("success-focus")) {
-          const darkerHslArray = Color(input["success"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--suf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
-        if (!input.hasOwnProperty("warning-focus")) {
-          const darkerHslArray = Color(input["warning"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--waf"] =
-            darkerHslArray[0] +
-            " " +
-            darkerHslArray[1] +
-            "%" +
-            " " +
-            darkerHslArray[2] +
-            "%";
-        }
-
-        if (!input.hasOwnProperty("error-focus")) {
-          const darkerHslArray = Color(input["error"])
-            .darken(0.2)
-            .hsl()
-            .round()
-            .array();
-          resultObj["--erf"] =
             darkerHslArray[0] +
             " " +
             darkerHslArray[1] +
@@ -202,22 +106,19 @@ module.exports = {
           }
         }
 
+        // auto generate shades colors
+        if (!input.hasOwnProperty("shades-white")) {
+          resultObj["--sw"] = 0 + " " + 0 + "%" + " " + 100 + "%";
+        }
+
+        if (!input.hasOwnProperty("shades-black")) {
+          resultObj["--sb"] = 0 + " " + 0 + "%" + " " + 9 + "%";
+        }
+
         // auto generate content colors
         if (!input.hasOwnProperty("base-content")) {
           resultObj["--bc"] = this.generateForegroundColorFrom(
             input["base-100"]
-          );
-        }
-
-        if (!input.hasOwnProperty("primary-content")) {
-          resultObj["--pc"] = this.generateForegroundColorFrom(
-            input["primary"]
-          );
-        }
-
-        if (!input.hasOwnProperty("secondary-content")) {
-          resultObj["--sc"] = this.generateForegroundColorFrom(
-            input["secondary"]
           );
         }
 
@@ -227,35 +128,9 @@ module.exports = {
           );
         }
 
-        if (!input.hasOwnProperty("info-content")) {
-          resultObj["--inc"] = this.generateForegroundColorFrom(input["info"]);
-        }
-
-        if (!input.hasOwnProperty("success-content")) {
-          resultObj["--suc"] = this.generateForegroundColorFrom(
-            input["success"]
-          );
-        }
-
-        if (!input.hasOwnProperty("warning-content")) {
-          resultObj["--wac"] = this.generateForegroundColorFrom(
-            input["warning"]
-          );
-        }
-
-        if (!input.hasOwnProperty("error-content")) {
-          resultObj["--erc"] = this.generateForegroundColorFrom(input["error"]);
-        }
-
         // auto generate css variables
         if (!input.hasOwnProperty("--rounded-btn")) {
           resultObj["--rounded-btn"] = "0.5rem";
-        }
-        if (!input.hasOwnProperty("--animation-btn")) {
-          resultObj["--animation-btn"] = "0.25s";
-        }
-        if (!input.hasOwnProperty("--btn-focus-scale")) {
-          resultObj["--btn-focus-scale"] = "0.95";
         }
         if (!input.hasOwnProperty("--border-btn")) {
           resultObj["--border-btn"] = "1px";
@@ -313,7 +188,7 @@ module.exports = {
         }
       });
     } else if (config("artbcui.themes") != false) {
-      themeOrder = ["light", "dark"];
+      themeOrder = ["light"]; //["light", "dark"]; if theme dark is done added
     } else if (config("artbcui.themes") == false) {
       themeOrder.push("light");
     }
@@ -341,6 +216,8 @@ module.exports = {
               },
             });
           }
+        } else if (config("daisyui.darkTheme") === false) {
+          // disables prefers-color-scheme: dark
         } else {
           if (themeOrder[0] != "dark" && themeOrder.includes("dark")) {
             addBase({

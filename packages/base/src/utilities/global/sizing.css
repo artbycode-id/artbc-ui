@@ -1,12 +1,27 @@
-.min-h-6 {
-  min-height: 1.5rem;
+.w-15 {
+  width: 3.75rem;
 }
-.min-h-8 {
-  min-height: 2rem;
+
+.h-15 {
+  height: 3.75rem;
 }
+
+.min-h-9 {
+  min-height: 2.25rem;
+}
+
+.min-h-10 {
+  min-height: 2.5rem;
+}
+
+.min-h-11 {
+  min-height: 2.75rem;
+}
+
 .min-h-12 {
   min-height: 3rem;
 }
-.min-h-16 {
-  min-height: 4rem;
+
+.min-h-15 {
+  min-height: 3.75rem;
 }
