@@ -14,11 +14,6 @@ module.exports = [
     variants: ["sm", "md", "lg", "xl"],
   },
   {
-    // responsive utilites for artbcui components
-    pattern: /(modal-middle|card-side)/,
-    variants: ["sm", "md", "lg", "xl"],
-  },
-  {
     // color utilities for artbcui colors
     pattern:
       /(bg|to|via|from|text|fill|stroke|border|outline)-((primary|secondary|accent|neutral)(-focus|-content|))|((info|success|warning|error)(-content|))|(base)(-100|-200|-300|-content)/,
