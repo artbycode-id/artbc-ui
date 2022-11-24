@@ -87,6 +87,7 @@
   }
 
   /* brand colors */
+
   &-primary {
     @apply bg-primary text-shades-white;
     &:hover,
@@ -105,6 +106,101 @@
       @apply bg-primary-200 text-shades-white;
     }
   }
+
+  &-secondary {
+    @apply bg-secondary text-shades-white;
+    &:hover,
+    &.btn-active {
+      @apply bg-secondary-700;
+    }
+    &:focus-visible {
+      @apply ring-secondary;
+    }
+
+     /* disabled */
+     &.btn-disabled,
+     &.btn-disabled:hover,
+     &[disabled],
+     &[disabled]:hover {
+       @apply bg-secondary-200 text-shades-white;
+     }
+   }
+
+   &-error {
+    @apply bg-error text-shades-white;
+    &:hover,
+    &.btn-active {
+      @apply bg-error-700;
+    }
+    &:focus-visible {
+      @apply ring-error;
+    }
+
+     /* disabled */
+     &.btn-disabled,
+     &.btn-disabled:hover,
+     &[disabled],
+     &[disabled]:hover {
+       @apply bg-error-200 text-shades-white;
+     }
+   }
+
+   &-warning {
+    @apply bg-warning text-shades-white;
+    &:hover,
+    &.btn-active {
+      @apply bg-warning-700;
+    }
+    &:focus-visible {
+      @apply ring-warning;
+    }
+
+     /* disabled */
+     &.btn-disabled,
+     &.btn-disabled:hover,
+     &[disabled],
+     &[disabled]:hover {
+       @apply bg-warning-200 text-shades-white;
+     }
+   }
+
+   &-success {
+    @apply bg-success text-shades-white;
+    &:hover,
+    &.btn-active {
+      @apply bg-success-700;
+    }
+    &:focus-visible {
+      @apply ring-success;
+    }
+
+     /* disabled */
+     &.btn-disabled,
+     &.btn-disabled:hover,
+     &[disabled],
+     &[disabled]:hover {
+       @apply bg-success-200 text-shades-white;
+     }
+   }
+
+   &-info {
+    @apply bg-info text-shades-white;
+    &:hover,
+    &.btn-active {
+      @apply bg-info-700;
+    }
+    &:focus-visible {
+      @apply ring-info;
+    }
+
+     /* disabled */
+     &.btn-disabled,
+     &.btn-disabled:hover,
+     &[disabled],
+     &[disabled]:hover {
+       @apply bg-info-200 text-shades-white;
+     }
+   }
 
   /* btn light */
   &-light {
@@ -142,6 +238,106 @@
       &[disabled],
       &[disabled]:hover {
         @apply bg-primary-30 text-primary-200;
+      }
+    }
+
+    /* secondary */
+    &.btn-secondary {
+      @apply bg-secondary-50 text-secondary;
+      &:hover,
+      &.btn-active {
+        @apply bg-secondary-200 text-secondary-700;
+      }
+      &:focus-visible {
+        @apply ring-secondary-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply bg-secondary-30 text-secondary-200;
+      }
+    }
+
+    /* error */
+    &.btn-error {
+      @apply bg-error-50 text-error;
+      &:hover,
+      &.btn-active {
+        @apply bg-error-200 text-error-700;
+      }
+      &:focus-visible {
+        @apply ring-error-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply bg-error-30 text-error-200;
+      }
+    }
+
+    /* warning */
+    &.btn-warning {
+      @apply bg-warning-50 text-warning;
+      &:hover,
+      &.btn-active {
+        @apply bg-warning-200 text-warning-700;
+      }
+      &:focus-visible {
+        @apply ring-warning-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply bg-warning-30 text-warning-200;
+      }
+    }
+
+    /* success */
+    &.btn-success {
+      @apply bg-success-50 text-success;
+      &:hover,
+      &.btn-active {
+        @apply bg-success-200 text-success-700;
+      }
+      &:focus-visible {
+        @apply ring-success-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply bg-success-30 text-success-200;
+      }
+    }
+
+    /* info */
+    &.btn-info {
+      @apply bg-info-50 text-info;
+      &:hover,
+      &.btn-active {
+        @apply bg-info-200 text-info-700;
+      }
+      &:focus-visible {
+        @apply ring-info-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply bg-info-30 text-info-200;
       }
     }
   }

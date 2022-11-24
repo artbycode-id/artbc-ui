@@ -12,6 +12,10 @@ export const Default: ComponentStory<typeof Button> = (args) => (
     <Button className="btn">Button</Button>
     <Button className="btn btn-primary">Button Primary</Button>
     <Button className="btn btn-secondary">Button Secondary</Button>
+    <Button className="btn btn-error">Button Error</Button>
+    <Button className="btn btn-warning">Button Warning</Button>
+    <Button className="btn btn-success">Button Success</Button>
+    <Button className="btn btn-info">Button Info</Button>
   </div>
 );
 
@@ -19,6 +23,11 @@ export const Light: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn btn-light">Button</Button>
     <Button className="btn btn-light btn-primary">Button Primary</Button>
+    <Button className="btn btn-light btn-secondary">Button Secondary</Button>
+    <Button className="btn btn-light btn-error">Button Error</Button>
+    <Button className="btn btn-light btn-warning">Button Warning</Button>
+    <Button className="btn btn-light btn-success">Button Success</Button>
+    <Button className="btn btn-light btn-info">Button Info</Button>
   </div>
 );
 
