@@ -11,6 +11,7 @@ export const Default: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn">Button</Button>
     <Button className="btn btn-primary">Button Primary</Button>
+    <Button className="btn btn-secondary">Button Secondary</Button>
   </div>
 );
 
