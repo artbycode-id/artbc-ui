@@ -380,6 +380,107 @@
         @apply text-secondary-200;
       }
     }
+
+    /* secondary */
+    &.btn-secondary {
+      @apply text-secondary;
+      &:hover,
+      &.btn-active {
+        @apply bg-secondary-30 text-secondary-700;
+      }
+      &:focus-visible {
+        @apply ring-secondary-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-secondary-200;
+      }
+    }
+
+    /* error */
+    &.btn-error {
+      @apply text-error;
+      &:hover,
+      &.btn-active {
+        @apply bg-error-30 text-error-700;
+      }
+      &:focus-visible {
+        @apply ring-error-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-error-200;
+      }
+    }
+
+    /* warning */
+    &.btn-warning {
+      @apply text-warning;
+      &:hover,
+      &.btn-active {
+        @apply bg-warning-30 text-warning-700;
+      }
+      &:focus-visible {
+        @apply ring-warning-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-warning-200;
+      }
+    }
+    
+    /* success */
+    &.btn-success {
+      @apply text-success;
+      &:hover,
+      &.btn-active {
+        @apply bg-success-30 text-success-700;
+      }
+      &:focus-visible {
+        @apply ring-success-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-success-200;
+      }
+    }
+
+    /* info */
+    &.btn-info {
+      @apply text-info;
+      &:hover,
+      &.btn-active {
+        @apply bg-info-30 text-info-700;
+      }
+      &:focus-visible {
+        @apply ring-info-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-info-200;
+      }
+    }
+
   }
 
   /* outline */
@@ -401,6 +502,7 @@
       @apply border-base-content border-opacity-10 bg-transparent text-base-content text-opacity-30;
     }
 
+    /* primary */
     &.btn-primary {
       @apply border-primary-200 text-primary;
       &:hover,
@@ -419,6 +521,107 @@
         @apply border-primary-50 text-primary-200;
       }
     }
+
+    /* secondary */
+    &.btn-secondary {
+      @apply border-secondary-200 text-secondary;
+      &:hover,
+      &.btn-active {
+        @apply bg-secondary-30 text-secondary-700;
+      }
+      &:focus-visible {
+        @apply ring-secondary-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply border-secondary-50 text-secondary-200;
+      }
+    }
+
+    /* error */
+    &.btn-error {
+      @apply border-error-200 text-error;
+      &:hover,
+      &.btn-active {
+        @apply bg-error-30 text-error-700;
+      }
+      &:focus-visible {
+        @apply ring-error-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply border-error-50 text-error-200;
+      }
+    }
+
+    /* warning */
+    &.btn-warning {
+      @apply border-warning-200 text-warning;
+      &:hover,
+      &.btn-active {
+        @apply bg-warning-30 text-warning-700;
+      }
+      &:focus-visible {
+        @apply ring-warning-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply border-warning-50 text-warning-200;
+      }
+    }
+
+    /* primary */
+    &.btn-success {
+      @apply border-success-200 text-success;
+      &:hover,
+      &.btn-active {
+        @apply bg-success-30 text-success-700;
+      }
+      &:focus-visible {
+        @apply ring-success-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply border-success-50 text-success-200;
+      }
+    }
+
+    /* info */
+    &.btn-info {
+      @apply border-info-200 text-info;
+      &:hover,
+      &.btn-active {
+        @apply bg-info-30 text-info-700;
+      }
+      &:focus-visible {
+        @apply ring-info-200;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply border-info-50 text-info-200;
+      }
+    }
+
   }
 
   /* link */
@@ -459,5 +662,106 @@
         @apply text-secondary-200;
       }
     }
+
+    /* secondary */
+    &.btn-secondary {
+      @apply text-secondary;
+      &:hover,
+      &.btn-active {
+        @apply text-secondary-700;
+      }
+      &:focus-visible {
+        @apply ring-secondary;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-secondary-200;
+      }
+    }
+
+    /* error */
+    &.btn-error {
+      @apply text-error;
+      &:hover,
+      &.btn-active {
+        @apply text-error-700;
+      }
+      &:focus-visible {
+        @apply ring-error;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-error-200;
+      }
+    }
+
+    /* warning */
+    &.btn-warning {
+      @apply text-warning;
+      &:hover,
+      &.btn-active {
+        @apply text-warning-700;
+      }
+      &:focus-visible {
+        @apply ring-warning;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-warning-200;
+      }
+    }
+
+    /* success */
+    &.btn-success {
+      @apply text-success;
+      &:hover,
+      &.btn-active {
+        @apply text-success-700;
+      }
+      &:focus-visible {
+        @apply ring-success;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-success-200;
+      }
+    }
+
+    /* info */
+    &.btn-info {
+      @apply text-info;
+      &:hover,
+      &.btn-active {
+        @apply text-info-700;
+      }
+      &:focus-visible {
+        @apply ring-info;
+      }
+
+      /* disabled */
+      &.btn-disabled,
+      &.btn-disabled:hover,
+      &[disabled],
+      &[disabled]:hover {
+        @apply text-info-200;
+      }
+    }
+
   }
 }

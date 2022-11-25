@@ -35,6 +35,11 @@ export const Ghost: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn btn-ghost">Button</Button>
     <Button className="btn btn-ghost btn-primary">Button Primary</Button>
+    <Button className="btn btn-ghost btn-secondary">Button Secondary</Button>
+    <Button className="btn btn-ghost btn-error">Button Error</Button>
+    <Button className="btn btn-ghost btn-warning">Button Warning</Button>
+    <Button className="btn btn-ghost btn-success">Button Success</Button>
+    <Button className="btn btn-ghost btn-info">Button Info</Button>
   </div>
 );
 
@@ -42,6 +47,11 @@ export const Outline: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn btn-outline">Button</Button>
     <Button className="btn btn-outline btn-primary">Button Primary</Button>
+    <Button className="btn btn-outline btn-secondary">Button Secondary</Button>
+    <Button className="btn btn-outline btn-error">Button Error</Button>
+    <Button className="btn btn-outline btn-warning">Button Warning</Button>
+    <Button className="btn btn-outline btn-success">Button Success</Button>
+    <Button className="btn btn-outline btn-info">Button Info</Button>
   </div>
 );
 
@@ -49,6 +59,11 @@ export const Link: ComponentStory<typeof Button> = (args) => (
   <div className="flex space-x-2">
     <Button className="btn btn-link">Button</Button>
     <Button className="btn btn-link btn-primary">Button Primary</Button>
+    <Button className="btn btn-link btn-secondary">Button Secondary</Button>
+    <Button className="btn btn-link btn-error">Button Error</Button>
+    <Button className="btn btn-link btn-warning">Button Warning</Button>
+    <Button className="btn btn-link btn-success">Button Success</Button>
+    <Button className="btn btn-link btn-info">Button Info</Button>
   </div>
 );
 
@@ -69,6 +84,21 @@ export const Disabled: ComponentStory<typeof Button> = (args) => (
     </Button>
     <Button className="btn btn-primary" disabled>
       Button Primary
+    </Button>
+    <Button className="btn btn-secondary" disabled>
+      Button Secondary
+    </Button>
+    <Button className="btn btn-error" disabled>
+      Button Error
+    </Button>
+    <Button className="btn btn-warning" disabled>
+      Button Warning
+    </Button>
+    <Button className="btn btn-success" disabled>
+      Button Succes
+    </Button>
+    <Button className="btn btn-info" disabled>
+      Button Info
     </Button>
   </div>
 );
