@@ -1,0 +1,71 @@
+{
+  "name": "@artbc-ui/base",
+  "version": "1.0.3",
+  "description": "Base Artbc UI System",
+  "main": "src/index.js",
+  "files": [
+    "dist",
+    "src/lib/**/*.js",
+    "!dist/*.rtl.css",
+    "src/index.js",
+    "src/colors/*.js"
+  ],
+  "scripts": {
+    "pre:base": "postcss --config src/base src/base/*.css --base src --dir dist",
+    "base": "cat dist/base/*.css > dist/base.css",
+    "post:base": "prejss-cli dist/base.css --format commonjs",
+    "pre:utilities-global": "postcss --config src/utilities/global src/utilities/global/*.css --base src --dir dist",
+    "utilities-global": "cat dist/utilities/global/*.css > dist/utilities-global.css",
+    "post:utilities-global": "prejss-cli dist/utilities-global.css --format commonjs",
+    "pre:utilities-components": "postcss --config src/utilities/components src/utilities/components/*.css --base src --dir dist",
+    "utilities-components": "cat dist/utilities/components/*.css > dist/utilities-components.css",
+    "post:utilities-components": "prejss-cli dist/utilities-components.css --format commonjs",
+    "merge:utilities": "cat dist/utilities-global.css dist/utilities-components.css > dist/utilities.css",
+    "pre:components": "postcss --config src/components src/components/*.css --base src --dir dist",
+    "components": "cat dist/components/*.css > dist/components.css",
+    "post:components": "prejss-cli dist/components.css --format commonjs",
+    "prejss": "prejss-cli dist/{utilities,components}.css --format commonjs",
+    "themes": "postcss src/themes/index.css -o dist/themes.css --config src/themes",
+    "full": "postcss src/full/index.css -o dist/full.css --config src/full",
+    "build": "npm run build:base && npm run build:utilities && npm run build:components && npm run prejss && npm run themes && npm run full",
+    "build:components": "npm run pre:components && npm run components && npm run post:components",
+    "build:base": "npm run pre:base && npm run base && npm run post:base",
+    "build:utilities": "npm run pre:utilities-global && npm run utilities-global && npm run post:utilities-global && npm run pre:utilities-components && npm run utilities-components && npm run post:utilities-components && npm run merge:utilities"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artbycode-id/artbc-ui.git"
+  },
+  "keywords": [
+    "UI",
+    "Base Themes",
+    "Tailwindcss"
+  ],
+  "author": "undercode99 <zrcoder101@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artbycode-id/artbc-ui/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "prejss-cli": "^0.3.3",
+    "tailwindcss": "^3.1.8"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "homepage": "https://artbycode-id.github.io/artbc-ui/",
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "color": "^4.2.3",
+    "css-selector-tokenizer": "^0.8.0"
+  },
+  "gitHead": "7876c0bd7711205f1839d26789f6cf06d0bcd671"
+}
